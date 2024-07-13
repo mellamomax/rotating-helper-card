@@ -10,4 +10,5 @@ A custom Home Assistant card to show and set helper input-number in a circle sli
 
 
 ![image](https://github.com/user-attachments/assets/f09244ea-b43a-43cf-a03f-cb9d16c65aaa)
-![helper|396x500, 75%](upload://1JLC5yUOuTAGWK5HhHn5F6G7hgq.gif)
+[![helper|396x500, 75%](upload://1JLC5yUOuTAGWK5HhHn5F6G7hgq.gif)
+](https://community-assets.home-assistant.io/original/4X/0/c/2/0c2e9eefdc576f629d6cbeeb7bff34cf5768a6a6.gif)
