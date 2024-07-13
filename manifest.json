@@ -1,9 +1,0 @@
-{
-  "domain": "rotating-helper-card",
-  "name": "Rotating Helper Card",
-  "version": "1.0.0",
-  "documentation": "https://github.com/yourusername/rotating-helper-card",
-  "dependencies": [],
-  "codeowners": ["@yourusername"],
-  "requirements": []
-}
