@@ -1,4 +1,6 @@
 {
   "name": "Rotating Helper Card",
   "render_readme": true
+  "filename": "rotating-helpercard.js",
+  "content_in_root": true
 }
