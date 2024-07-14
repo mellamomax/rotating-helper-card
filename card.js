@@ -1487,7 +1487,7 @@ customElements.define('hello-world-card-editor', HelloWorldCardEditor);
 // code to show the card in HA card-picker
 const helloWorldCardDescriptor = {
     type: 'hello-world-card', // Must match the type you use in your YAML configuration
-    name: 'Helper Slider', // Friendly name for the card picker
+    name: 'Rotating Helper Card', // Friendly name for the card picker
     description: 'A custom card to show & set helper input-number in a circle slider', // Short description
     preview: false, // Optional: Set to true to show a preview in the picker
     documentationURL: 'https://justpaste.it/38sr8' // Optional: Link to your documentation
