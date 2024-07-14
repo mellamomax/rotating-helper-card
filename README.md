@@ -12,7 +12,7 @@ A custom Home Assistant card to show and set helper input-number in a circle sli
 ![image](https://github.com/user-attachments/assets/d6287799-2b56-49b9-9c3b-1815c257feb3)
 
 Example yaml:
-
+```
 type: custom:rotating-helper-card
 entity: input_number.badrum_sensor
 stepSize: 15
@@ -23,3 +23,4 @@ offColor: red
 ringColor: orange
 trackColor: green
 automation: automation.badrum_sensor_2_0
+```
