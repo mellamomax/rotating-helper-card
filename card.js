@@ -1,10 +1,10 @@
-class HelloWorldCard extends HTMLElement {
+class RotatingHelperCard extends HTMLElement {
     config;
     content;
     isDragging = false;
 
     setConfig(config) {
-        console.log("Config received by HelloWorldCard:", config);
+        console.log("Config received by RotatingHelperCard:", config);
         this.config = config;
         // Set the step size from the config or default to 30
         this.stepSize = parseInt(this.config.stepSize) || 30;
@@ -68,7 +68,7 @@ class HelloWorldCard extends HTMLElement {
             helperTextElement.textContent = friendlyName;
         }
 
-        // Inside set hass method of HelloWorldCard class
+        // Inside set hass method of RotatingHelperCard class
         const automationEntity = hass.states[this.config.automation];
         const ringColor = this.config.ringColor || '#5d6263';
         const trackColor = this.config.trackColor || '#b1b4b5';
@@ -387,13 +387,13 @@ class HelloWorldCard extends HTMLElement {
         }
     }
 
-    // Inside HelloWorldCard class
+    // Inside RotatingHelperCard class
     getCardSize() {
         return 3; // Adjust size as needed
     }
     
     static getConfigElement() {
-        return document.createElement('hello-world-card-editor');
+        return document.createElement('rotating-helper-card-editor');
     }
     
     // Modify or add this method
@@ -413,11 +413,11 @@ class HelloWorldCard extends HTMLElement {
     }
 }
 
-customElements.define('rotating-helper-card', HelloWorldCard);
+customElements.define('rotating-helper-card', RotatingHelperCard);
 
 
 
-class HelloWorldCardEditor extends HTMLElement {
+class RotatingHelperCardEditor extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
@@ -1477,7 +1477,7 @@ class HelloWorldCardEditor extends HTMLElement {
 
 }
   
-customElements.define('hello-world-card-editor', HelloWorldCardEditor);
+customElements.define('rotating-helper-card-editor', RotatingHelperCardEditor);
 
 
 
@@ -1485,8 +1485,8 @@ customElements.define('hello-world-card-editor', HelloWorldCardEditor);
 
 
 // code to show the card in HA card-picker
-const helloWorldCardDescriptor = {
-    type: 'hello-world-card', // Must match the type you use in your YAML configuration
+const RotatingHelperCardDescriptor = {
+    type: 'rotating-helper-card', // Must match the type you use in your YAML configuration
     name: 'Rotating Helper Card', // Friendly name for the card picker
     description: 'A custom card to show & set helper input-number in a circle slider', // Short description
     preview: false, // Optional: Set to true to show a preview in the picker
@@ -1497,7 +1497,7 @@ const helloWorldCardDescriptor = {
 window.customCards = window.customCards || [];
 
 // Add your card to the customCards array
-window.customCards.push(helloWorldCardDescriptor);
+window.customCards.push(RotatingHelperCardDescriptor);
 
 
 
