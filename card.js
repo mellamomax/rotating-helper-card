@@ -413,7 +413,7 @@ class HelloWorldCard extends HTMLElement {
     }
 }
 
-customElements.define('circle-helper-card', HelloWorldCard);
+customElements.define('rotating-helper-card', HelloWorldCard);
 
 
 
